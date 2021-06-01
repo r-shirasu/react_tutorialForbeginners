@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Tweet from "./Tweet";
 
 function App() {
+  const [isRed, setRed] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
   return (
     <div className="app">
-      <Tweet name="spring" message="春だね" />
-      <Tweet name="summer" message="夏だね" />
-      <Tweet name="autmun" message="秋だね" />
-      <Tweet name="winter" message="冬だね" />
+      <button onClick={increment}>Increment</button>
+      <h1>{count}</h1>
     </div>
   );
 }
