@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <h1>Hello, react</h1>
+      <button onClick={sayHello}>Hello</button>
     </div>
   );
 }
