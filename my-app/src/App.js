@@ -4,10 +4,10 @@ import Tweet from "./Tweet";
 function App() {
   return (
     <div className="app">
-      <Tweet />
-      <Tweet />
-      <Tweet />
-      <Tweet />
+      <Tweet name="spring" />
+      <Tweet name="summer" />
+      <Tweet name="autmun" />
+      <Tweet name="winter" />
     </div>
   );
 }
